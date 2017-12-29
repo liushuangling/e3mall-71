@@ -13,7 +13,6 @@ import cn.e3mall.service.ItemService;
 public class ItemController {
 	@Autowired
 	private ItemService itemService;
-
 	@RequestMapping("/item/{itemId}")
 	@ResponseBody
 	private TbItem getItemById(@PathVariable Long itemId) {
